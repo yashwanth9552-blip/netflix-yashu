@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Read the dataset
-df = pd.read_csv(r"C:\Users\SINCHANA H M\Downloads\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App\Netflix Dataset.csv")
+df = pd.read_csv(r"C:\Users\Yashwanth R\Downloads\38833FF26BA1D.UnigramPreview_g9c9v27vpyspw!App\Netflix Dataset.csv")
 
 # Clean column names
 df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_')
@@ -62,5 +62,6 @@ print(f"Total Titles: {len(df)}")
 print(f"Movies: {len(df[df['category'].str.contains('Movie', case=False)])}")
 print(f"TV Shows: {len(df[df['category'].str.contains('TV', case=False)])}")
 print("\nTop 5 Countries:\n", country_counts.head())
+
 
 print("\n✅ Analysis Completed Successfully!")
